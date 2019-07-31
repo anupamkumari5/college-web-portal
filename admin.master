@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style5 {
+            width: 156px;
+            height: 134px;
+        }
+        .auto-style7 {
+            width: 276px;
+            height: 186px;
+        }
+        .auto-style8 {
+            width: 132px;
+            height: 186px;
+        }
+        .auto-style11 {
+            height: 186px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+         <div aria-orientation="horizontal" style="height: 127px; width: 1173px">
+            <img class="auto-style5" src="Image/login_icon.png" /><asp:Image ID="Image1" runat="server" Height="135px" ImageUrl="~/Image/adminpanel-icon.png" Width="866px" />
+          
+        </div>
+        &nbsp;<div style="width: 118%"><center>
+   <table><tr><td>
+       <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Uploadfacultydetails.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Faculty</asp:LinkButton></td>
+       <td> <asp:LinkButton ID="LinkButton2" runat="server" PostBackUrl="~/Uploadformdetails.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Form</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton3" runat="server" PostBackUrl="~/Uploadhallticket.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">HallTicket</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton4" runat="server" PostBackUrl="~/Uploadnotice.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Notice</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton5" runat="server" PostBackUrl="~/Uploadprogram.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Program</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton6" runat="server" PostBackUrl="~/Uploadresult.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Result</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton7" runat="server" PostBackUrl="~/Uploadsyllabus.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Syllabus</asp:LinkButton></td>
+       <td><asp:LinkButton ID="LinkButton8" runat="server" PostBackUrl="~/logout.aspx" Font-Bold="True" Font-Names="Arial Rounded MT Bold">Logout</asp:LinkButton></td>
+   <td></td><td></td><td><asp:Label ID="Label1" runat="server" Text="Hello.."></asp:Label></td><td><asp:Label ID="Label2" runat="server" Text=""></asp:Label></td></tr>
+   </table></center>                       
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <div>
+            <table style="width: 141%; height: 226px;">
+                <tr>
+                    <td class="auto-style7">
+                        &nbsp;</td>
+                    <td class="auto-style8">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            <p style="width: 540px; height: 45px">
+                            </p>
+                        </asp:ContentPlaceHolder>
+                          </td>                     
+                    <td class="auto-style11">
+                        &nbsp;</td>
+                </tr>
+                </table>
+
+
+
+        </div>
+        <div style="width:100%"><center>
+            &copy;2019.All right reserved. 
+            </center>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 220px;
+        }
+        .auto-style2 {
+            width: 899px;
+        }
+    </style>
+    </head>
+<body>
+    <form id="form1" runat="server">
+        <div aria-orientation="horizontal" style="background-color: #99CCFF; width: 1450px; height: 223px;">
+            <img class="auto-style5" src="Image/logo.png" />&nbsp;<asp:Image ID="Image1" runat="server" Height="219px" ImageUrl="~/Image/banner-ignou.jpg" Width="1217px" />
+        </div>
+        &nbsp;<div style="width: 170%; height: 24px;">
+                        <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" style="text-align: left; color: #3333CC; background-color:lavenderblush" BackColor="#FF99FF">
+                            <Items>
+                                    <asp:MenuItem Text="HOME" Value="HOME" NavigateUrl="~/Home.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="ABOUT US" Value="ABOUT US">
+                                    <asp:MenuItem Text="HISTORY" Value="HISTORY" NavigateUrl="~/History.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="PRINCIPAL'S MESSAGE" Value="PRINCIPAL'S MESSAGE" NavigateUrl="~/Pmessage.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="ACADEMICS" Value="ACADEMICS">
+                                    <asp:MenuItem Text="ADMISSION" Value="ADMISSION" NavigateUrl="~/admission.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="ANTI RAGGING" Value="ANTI RAGGING" NavigateUrl="~/antiraging.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="COURSE" Value="COURSE" NavigateUrl="~/course.aspx">
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="FACULTY" Value="FACULTY" NavigateUrl="~/viewfaculty.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="FACILITES &amp; SERVICES" Value="FACILITES &amp; SERVICES">
+                                    <asp:MenuItem Text="COMPUTER CENTER" Value="COMPUTER CENTER" NavigateUrl="~/ccenter.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="LIBRARY" Value="LIBRARY" NavigateUrl="~/library.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="HOSTELS" Value="HOSTELS" NavigateUrl="~/hostel.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="SPORTS FACILITES" Value="SPORTS FACILITES" NavigateUrl="~/sport.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="MEDICAL FECILITES" Value="MEDICAL FECILITES" NavigateUrl="~/medical.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="BANK" Value="BANK" NavigateUrl="~/bank.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="CLUB" Value="CLUB" NavigateUrl="~/club.aspx"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="DOWNLOAD" Value="DOWNLOAD">
+                                    <asp:MenuItem Text="SYLLABUS" Value="SYLLABUS" NavigateUrl="~/viewsyllabus.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="EXAM FORM" Value="EXAM FORM" NavigateUrl="~/viewform.aspx"></asp:MenuItem>
+                                    <asp:MenuItem Text="RESULT" Value="RESULT" NavigateUrl="~/viewresult.aspx"></asp:MenuItem>
+                                    <asp:MenuItem NavigateUrl="~/viewnotice.aspx" Text="NOTICE" Value="NOTICE"></asp:MenuItem>
+                                </asp:MenuItem>
+                                <asp:MenuItem Text="GALLERY" Value="GALLERY" NavigateUrl="~/gallery.aspx"></asp:MenuItem>
+                                <asp:MenuItem Text="CONTACT US" Value="CONTACT US" NavigateUrl="~/contact.aspx">
+                                    <asp:MenuItem Text="MOBILE NUMBER" Value="MOBILE NUMBER"></asp:MenuItem>
+                                </asp:MenuItem>
+                            </Items>
+                            
+                        </asp:Menu>
+                        <br />
+                        <br />
+                        <br />
+            &nbsp;
+        </div>
+      <div style="background-color: #0099FF; width: 1444px;">
+            <table style="width: 100%;">
+                <tr>
+                    <td class="auto-style1" aria-orientation="vertical">
+                        <br />
+                        
+                    </td>
+                    <td class="auto-style2">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="auto-style3">
+                        <br />
+                        </td>
+                </tr>
+            </table>
+     <div style="background-color: #66FF66">
+        <center>&copy;2019 College Web Portal Copyright Information</center></div>
+
+          </div>
+    </form>
+</body>
+</html>
